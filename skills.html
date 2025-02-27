@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Skills & Projects - Mayank Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            padding-bottom: 50px;
+        }
+
+        nav {
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+            background-color: black;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #077b32;
+        }
+
+        .links {
+            display: flex;
+        }
+
+        .links a {
+            font-size: 1.2rem;
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: 550;
+        }
+
+        .links a:hover {
+            color: #077b32;
+        }
+
+        .skills-section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .skills-section h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .skills-section h1 span {
+            color: #077b32;
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #077b32;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #0dd544;
+        }
+
+        .project-card h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-card p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-card a {
+            text-decoration: none;
+            color: #077b32;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        /* Ensure smooth animations */
+        [data-aos] {
+            opacity: 0;
+            transition-property: transform, opacity;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 1rem;
+            background-color: #0a0a0a;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Mayank <span>Sharma</span></div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <section class="skills-section">
+        <h1>My <span>Projects</span></h1>
+        <div class="projects-container">
+            <div class="project-card" data-aos="fade-up" data-aos-duration="1000">
+                <h2>Burger House Website</h2>
+                <p>A dynamic restaurant site featuring interactive menus, reservation forms, and a Node.js backend.</p>
+                <a href="burger/webpage.html" target="_blank">View Project</a>
+            </div>
+            <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <h2>Mud-Art E-commerce</h2>
+                <p>An elegant online store for China clay pots with product listings, filters, and a full checkout system.</p>
+                <a href="Project/index.html" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="skills-section">
+        <h1>My <span>Graphic Design Projects</span></h1>
+        <div class="projects-container">
+            <div class="project-card" data-aos="fade-up" data-aos-duration="1000">
+                <h2>Logo Designs</h2>
+                <p>A collection of modern and minimalistic logos crafted for brands and startups.</p>
+                <a href="#">View Designs</a>
+            </div>
+            <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <h2>Social Media Posters</h2>
+                <p>Creative posters designed for Instagram, blending typography and vibrant visuals.</p>
+                <a href="#">View Posters</a>
+            </div>
+            <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <h2>Brand Identity</h2>
+                <p>Complete branding packages, including logos, color schemes, and typography sets.</p>
+                <a href="#">View Branding</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Mayank Sharma. All Rights Reserved.
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ 
+          once: true, // ensures animation happens only once
+          duration: 1200, 
+          offset: 120
+      });
+    </script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>About Me - Mayank Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #077b32;
+    text-shadow: 0 0 10px #077b32;
+}
+
+.links {
+    display: flex;
+}
+
+.links a {
+    font-size: 1.2rem;
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 550;
+    transition: 0.3s linear;
+    position: relative;
+}
+
+.links a::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #077b32;
+    transition: 0.2s linear;
+}
+
+.links a:hover::before {
+    width: 100%;
+}
+
+.links a:hover {
+    color: #077b32;
+}
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 800px;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    box-shadow: 0 0 20px #077b32;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.about-container h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-container h1 span {
+    color: #077b32;
+    text-shadow: 0 0 10px #077b32;
+}
+
+.about-container p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        padding: 1.5rem;
+    }
+
+    .about-container h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-container p {
+        font-size: 1rem;
+    }
+
+    .links a {
+        font-size: 1rem;
+        margin: 0 10px;
+    }
+}
+a {
+  text-decoration: none;
+  color: #4caf50; /* Green palette */
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+a span {
+  border-bottom: 2px solid #4caf50;
+  padding-bottom: 2px;
+  transition: border-color 0.3s ease;
+}
+
+a:hover span {
+  border-color: #388e3c; /* Darker green on hover */
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Mayank <span>Sharma</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="skills.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="services.html">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="contact.html">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="main-container">
+            <div class="content" data-aos="fade-up" data-aos-duration="1500">
+                <h1>About <span>Me</span></h1>
+                <p>Hi! I'm Mayank Sharma — a creative Fullstack Developer, Web Designer, and Graphic Designer. I specialize in crafting sleek, responsive websites with seamless user experiences, using technologies like HTML, CSS, JavaScript, and modern frameworks like Node.js and React.js.</p>
+                <p>Beyond web development, I design visually striking graphics — from logos to social media posters — blending creativity and functionality to build memorable brand identities.</p>
+                <p>I'm also diving into Machine Learning and Android app development, driven by a passion for building innovative digital solutions.</p>
+                <p>When I'm not coding, I'm either sketching, listening to music, or creating engaging lyrical videos for my Instagram page <a href="https://www.instagram.com/mayverse_lyrics" target="_blank">
+                    <span>@mayverse_lyrics</span>
+                  </a>
+                  </a></p>
+                <p>Let’s build something amazing together!</p>
+
+                <div class="btn">
+                    <a href="contact.html">
+                        <button>Contact Me</button>
+                    </a>
+                </div>
+                
+            </div>
+            <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+                <img src="image.webp" alt="Mayank Sharma">
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script src="script.js">
+        const hamburg = () => {
+    const dropdown = document.querySelector('.dropdown');
+    dropdown.style.display = 'block';
+    setTimeout(() => {
+        dropdown.style.transform = 'translateY(0)';
+        dropdown.style.opacity = '1';
+    }, 50);
+}
+
+const cancel = () => {
+    const dropdown = document.querySelector('.dropdown');
+    dropdown.style.transform = 'translateY(-20px)';
+    dropdown.style.opacity = '0';
+    setTimeout(() => {
+        dropdown.style.display = 'none';
+    }, 300);
+}
+
+window.addEventListener('resize', () => {
+    const dropdown = document.querySelector('.dropdown');
+    if (window.innerWidth > 768) {
+        dropdown.style.display = 'none';
+        dropdown.style.transform = 'translateY(-20px)';
+        dropdown.style.opacity = '0';
+    }
+});
+
+document.addEventListener('click', (e) => {
+    const dropdown = document.querySelector('.dropdown');
+    const hamburgIcon = document.querySelector('.hamburg');
+    if (!dropdown.contains(e.target) && e.target !== hamburgIcon) {
+        cancel();
+    }
+});
+    </script>
+</body>
+</html>
