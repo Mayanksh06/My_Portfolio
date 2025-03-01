@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Designs - Mayank Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            padding-bottom: 50px;
+        }
+
+        nav {
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+            background-color: black;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #077b32;
+        }
+
+        .links {
+            display: flex;
+        }
+
+        .links a {
+            font-size: 1.2rem;
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: 550;
+        }
+
+        .links a:hover {
+            color: #077b32;
+        }
+
+        .design-section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .design-section h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .design-section h1 span {
+            color: #077b32;
+        }
+
+        .logo-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .logo-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #077b32;
+            text-align: center;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .logo-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #0dd544;
+        }
+
+        .logo-card img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 10px;
+        }
+
+        .logo-card h2 {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 1rem;
+            background-color: #0a0a0a;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Mayank <span>Sharma</span></div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <section class="design-section">
+        <h1>My <span>Logo Designs</span></h1>
+        <div class="logo-container">
+            
+            <div class="logo-card">
+                <img src="./designs/Mayverse.png" alt="Logo 2">
+                <h2>Social Media Logo</h2>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Mayank Sharma. All Rights Reserved.
+    </footer>
+</body>
+</html>
