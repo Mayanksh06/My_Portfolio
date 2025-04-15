@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Designs - Mayank Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: black;
+      color: white;
+      padding-bottom: 50px;
+    }
+
+    nav {
+      width: 100%;
+      height: 10vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 2rem;
+      background-color: black;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #077b32;
+    }
+
+    .links {
+      display: flex;
+    }
+
+    .links a {
+      font-size: 1.2rem;
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: 550;
+    }
+
+    .links a:hover {
+      color: #077b32;
+    }
+
+    .design-section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .design-section h1 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    .design-section h1 span {
+      color: #077b32;
+    }
+
+    .design-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .design-card {
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #077b32;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .design-card:hover {
+      transform: scale(1.05);
+    }
+
+    .design-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 1rem;
+      background-color: #0a0a0a;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Mayank <span>Sharma</span></div>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="certificates.html">Certificates</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <section class="design-section">
+    <h1>App <span>Designs</span></h1>
+    <div class="design-gallery">
+      <div class="design-card" data-aos="zoom-in">
+        <img src="appimg/1.jpg" alt="App Design 1">
+      </div>
+      <div class="design-card" data-aos="zoom-in" data-aos-delay="100">
+        <img src="appimg/2.jpg" alt="App Design 2">
+      </div>
+      <div class="design-card" data-aos="zoom-in" data-aos-delay="200">
+        <img src="appimg/3.jpg" alt="App Design 3">
+      </div>
+      <div class="design-card" data-aos="zoom-in" data-aos-delay="300">
+        <img src="appimg/4.jpg" alt="App Design 4">
+      </div>
+      <div class="design-card" data-aos="zoom-in" data-aos-delay="300">
+        <img src="appimg/5.jpg" alt="App Design 4">
+      </div>
+      <!-- Add more cards as needed -->
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Mayank Sharma. All Rights Reserved.
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1200,
+      offset: 120
+    });
+  </script>
+</body>
+</html>
