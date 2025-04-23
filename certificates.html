@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Certificates - Mayank Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            background-color: black;
+            color: white;
+            padding-bottom: 50px;
+        }
+
+        nav {
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+            position: sticky;
+            top: 0;
+            background-color: black;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #077b32;
+        }
+
+        .links {
+            display: flex;
+        }
+
+        .links a {
+            font-size: 1.2rem;
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: 550;
+        }
+
+        .links a:hover {
+            color: #077b32;
+        }
+
+        .certificates-section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .certificates-section h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .certificates-section h1 span {
+            color: #077b32;
+        }
+
+        .certificates-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .certificate-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #077b32;
+            text-align: center;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .certificate-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #0dd544;
+        }
+
+        .certificate-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .certificate-card h2 {
+            margin: 1rem 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 1rem;
+            background-color: #0a0a0a;
+            color: #fff;
+        }
+
+        [data-aos] {
+            opacity: 0;
+            transition-property: transform, opacity;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Mayank <span>Sharma</span></div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="certificates.html">Certificates</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <section class="certificates-section">
+        <h1 data-aos="fade-down">My <span>Certificates</span></h1>
+        <div class="certificates-container">
+            <div class="certificate-card" data-aos="fade-up" data-aos-duration="1000">
+                <img src="./certificates/Accenture certificate_page-0001.jpg" alt="Certificate 1">
+                <h2>Accenture</h2>
+            </div>
+            <div class="certificate-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <img src="./certificates/AI for India 2.0.png" alt="Certificate 2">
+                <h2>AI for India 2.0</h2>
+            </div>
+            <div class="certificate-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <img src="./certificates/IIT-Madras_Python_page-0001.jpg" alt="Certificate 3">
+                <h2>Python from IIT-Madras</h2>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Mayank Sharma. All Rights Reserved.
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ 
+          once: true, 
+          duration: 1200, 
+          offset: 120
+      });
+    </script>
+</body>
+</html>
